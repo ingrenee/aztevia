@@ -1,0 +1,3 @@
+* Los custom posrt type  crear solo con "Types"
+* se agrega   plugin para clonar posts
+* Actualizamos los plugins
