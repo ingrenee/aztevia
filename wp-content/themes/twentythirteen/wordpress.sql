@@ -4,7 +4,7 @@ Source Host     : localhost:3306
 Source Database : wordpress
 Target Host     : localhost:3306
 Target Database : wordpress
-Date: 1/16/2014 1:38:25 AM
+Date: 1/16/2014 1:37:51 AM
 */
 
 SET FOREIGN_KEY_CHECKS=0;
