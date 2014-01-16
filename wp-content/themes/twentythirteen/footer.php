@@ -22,6 +22,12 @@
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 
+<script src="<?php echo get_template_directory_uri(); ?>/foundation/js/jquery.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/foundation/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
 	<?php wp_footer(); ?>
 </body>
 </html>

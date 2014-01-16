@@ -38,6 +38,15 @@
 		
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
+       However, there is a blank style.css in the css directory should you prefer -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/gumby.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <script src="<?php echo get_template_directory_uri(); ?>/gumby/js/libs/modernizr-2.6.2.min.js"></script>
+		
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
