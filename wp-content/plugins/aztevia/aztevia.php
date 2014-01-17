@@ -47,3 +47,9 @@ function add_my_post_types_to_query( $query ) {
 	return $query;
 }
 */
+
+
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'home-productos-3', 500, 370,true ); //300 pixels wide (and unlimited height)
+	add_image_size( 'home-productos-5', 515, 370, true ); //(cropped)
+}

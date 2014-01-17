@@ -69,7 +69,7 @@ Enlaces sociales
 <div class="headertheme">
 <div class="row">
 <div class="large-4 medium-4 columns">
-		<a href="#" class="logo">
+		<a   class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<span>Aztevia.com</span>
 				</a>
 </div>
@@ -106,13 +106,6 @@ Enlaces sociales
 
 
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</a>
-
-			<!-- #navbar -->
-		</header><!-- #masthead -->
+		<!-- #masthead -->
 
 		<div id="main" class="site-main">

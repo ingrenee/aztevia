@@ -19,6 +19,9 @@ get_header(); ?>
 	<?PHP if(is_home()):?>
 	<div id="main" class="large-12 columns" role="main">
 	
+	<?php get_template_part( 'aztevia/productosaztevia', 'home' ); ?>
+	
+	
 	<?php get_template_part( 'aztevia/productos', 'home' ); ?>
 	
 	<?php get_template_part( 'aztevia/testimonios', 'home' ); ?>
