@@ -22,9 +22,17 @@ get_header(); ?>
 	<?php get_template_part( 'aztevia/productosaztevia', 'home' ); ?>
 	
 	
-	<?php get_template_part( 'aztevia/productos', 'home' ); ?>
+	<?php // get_template_part( 'aztevia/productos', 'home' ); ?>
+	
+	<div class="row bg-web">
+	<div class="large-12 columns ">
+	
+	<h1 class="title testimonios">Testimonios</h1>
+	
+	<div class="layer white">
 	
 	<?php get_template_part( 'aztevia/testimonios', 'home' ); ?>
+	</div></div></div>
 	
 	<?php get_template_part( 'aztevia/recetas', 'home' ); ?>
 	

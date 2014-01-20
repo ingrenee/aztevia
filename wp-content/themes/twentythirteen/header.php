@@ -81,7 +81,7 @@ Enlaces sociales
 </div>
 
 <div class="row">
-		<div class="large-10 columns">
+		<div class="large-12 columns">
 				
 				
 				

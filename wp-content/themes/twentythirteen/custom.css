@@ -3,10 +3,12 @@
 *
 {}
 
-body
+body,h1 a, a, p,h1,h2,h3
 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+
+{}
 
 .toptheme
 {
@@ -132,12 +134,16 @@ position: relative;
 	background-color: #333;
 	position: relative;
 	padding:0px;
-	min-height:240px;
+	min-height:250px;
 	overflow:hidden;
 }
 
 .bloque-home.large-custom-5 
-{max-height:255px;}
+{
+	/*
+	max-height:255px;
+	*/
+	}
 			.large-custom-3
 			{
 	
@@ -239,9 +245,138 @@ margin-bottom: 8%;
 left:inherit;
 				}
 				
+				.bloque-home.large-custom-5:hover .entry-header  img
+				{margin-bottom: 6%;}
+				
+				
 				.bloque-home:hover .entry-header h1 a
 				{
-	padding: 2% auto;
+	padding: 2% 0px;
 	color: #000;
+	text-align:center;
 }
 
+.bg-web
+{
+	background-color: #ececec;
+}
+
+.white
+{
+	background-color: #fff;
+	overflow: hidden;
+	padding-top: 2%;
+}
+
+
+/* testimonio home*/
+
+.testimonio
+{
+	
+}
+.testimonio article
+{
+	background-color: #e6007e;
+	padding: 0px;
+	position:relative;
+}
+
+.testimonio article .entry-header
+{
+	color: #FFF;
+	display: inline-block;
+	float: left;
+	width: 50%;
+	vertical-align: top;
+	padding: 5%;
+	padding-bottom:0px;
+	margin:0px;
+	
+}
+.testimonio article .entry-header h1
+{
+	line-height: normal;
+	padding: 0px;
+	margin: 0px;
+	font-size: 24px;	
+}
+.testimonio article .entry-header h1 a
+{
+	font-size: 24px;
+	color: #FFF;
+}
+.testimonio article .entry-header p
+{
+	font-size: 12px;
+}
+
+.testimonio article .entry-meta
+{
+	display: inline-block;
+margin: 0px;
+padding: 0px;
+vertical-align: top;
+width: 49%;
+float: right;
+margin-left: 1%;
+clear: none;
+height: 100%;
+position: absolute;
+overflow: hidden;
+}
+.testimonio article .entry-meta .imagen img
+{
+	position:absolute;
+	width:100%;
+	}
+.testimonio article .entry-meta .imagen
+{
+	
+	position: relative;
+height: 100%;
+width: 100%;}
+
+.testimonio article .entry-meta a.permalink
+{
+	color: #000;
+	background-color: #a7bf32;
+	display: block;
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	padding-right: 5%;
+	text-align: right;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.testimonio article .entry-meta a.permalink span.corner
+{
+	background-image: url(aztevia/images/corner.png);
+	height: 8px;
+	width: 14px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	position: absolute;
+	right: 5%;
+top: -8px;
+}
+
+h1.title
+{
+	font-size: 30.17px;
+	color: #000;
+	margin:0px;
+	padding:10px 60px;
+}
+
+h1.title.testimonios
+{
+	background-image: url(aztevia/images/testimonio-icon.jpg);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+}
+.clear
+{
+	clear:both;}
