@@ -1,21 +1,20 @@
 <?php if ( have_posts() ) : ?>
 
-<ul>
-<h1>Recetas</h1>
+
 <?php
 
 
-$args = array( 'posts_per_page' => 5, 'post_type'=>'receta');
+$args = array( 'posts_per_page' => 3, 'post_type'=>'receta');
 
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-	<li> 
+<div class="large-4 medium-6 small-12 columns receta"> 
 		<?php get_template_part( 'aztevia/templates/content', 'receta-home' ); ?>
-	</li>
+</div>
 <?php endforeach; 
 wp_reset_postdata();?>
 
-</ul>
+
 		
 <?php else : ?>
 		<?php get_template_part( 'content', 'none'); ?>

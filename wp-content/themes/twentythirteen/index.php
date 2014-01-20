@@ -34,10 +34,24 @@ get_header(); ?>
 	<?php get_template_part( 'aztevia/testimonios', 'home' ); ?>
 	</div></div></div>
 	
+    
+    <div class="row bg-web">
+	<div class="large-12 columns">
+    <h1 class="title recetas">Recetas</h1>
+    <div class="layer white">
 	<?php get_template_part( 'aztevia/recetas', 'home' ); ?>
-	
+    </div>
+    </div>
+	</div>
+    
+    
+    <div class="row bg-web">
+	<div class="large-12 columns">
+    <h1 class="title blogs">Blog</h1>
+    <div class="layer white">
 	<?php get_template_part( 'aztevia/blogs', 'home' ); ?>
-	
+	</div></div></div>
+    
 	
 	</div>	
 	

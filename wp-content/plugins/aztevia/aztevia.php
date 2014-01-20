@@ -53,4 +53,6 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'home-productos-3', 500, 370,true ); //300 pixels wide (and unlimited height)
 	add_image_size( 'home-productos-5', 515, 370, true ); //(cropped)
 	add_image_size( 'home-testimonio-4', 190, 190, true ); //(cropped)
+		add_image_size( 'home-receta-4', 320, 213, true ); //(cropped)
+		add_image_size( 'home-post-4', 120,180 , true ); //(cropped)
 }

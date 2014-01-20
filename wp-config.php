@@ -19,13 +19,13 @@
 define('WP_HOME','http://www.aztevia.yo');
 define('WP_SITEURL','http://www.aztevia.yo');
 
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'hayemple_azte');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'hayemple_azte');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', '97856832');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

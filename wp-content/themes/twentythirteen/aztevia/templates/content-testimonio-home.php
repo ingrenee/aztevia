@@ -7,7 +7,7 @@
  * @since WP Foundation 0.7 
  */
  ?> <!--  content receta home -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(' color-a '); ?>>
 
 		
 		<header class="entry-header">
