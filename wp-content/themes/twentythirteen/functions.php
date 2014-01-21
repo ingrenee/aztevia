@@ -242,6 +242,53 @@ function twentythirteen_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	
+	
+	
+	
+		register_sidebar( array(
+		'name'          => __( 'footer 1', 'twentythirteen' ),
+		'id'            => 'sidebar-f1',
+		'description'   => __( 'Appears on posts and pages in the sidebar.', 'twentythirteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	
+		register_sidebar( array(
+		'name'          => __( 'footer 2', 'twentythirteen' ),
+		'id'            => 'sidebar-f2',
+		'description'   => __( 'Appears on posts and pages in the sidebar.', 'twentythirteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	
+		register_sidebar( array(
+		'name'          => __( 'footer 3', 'twentythirteen' ),
+		'id'            => 'sidebar-f3',
+		'description'   => __( 'Appears on posts and pages in the sidebar.', 'twentythirteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+		register_sidebar( array(
+		'name'          => __( 'footer 4', 'twentythirteen' ),
+		'id'            => 'sidebar-f4',
+		'description'   => __( 'Appears on posts and pages in the sidebar.', 'twentythirteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	
+	
+	
+	
+	
 }
 add_action( 'widgets_init', 'twentythirteen_widgets_init' );
 

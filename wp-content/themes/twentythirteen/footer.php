@@ -12,16 +12,51 @@
 ?>
 
 		</div><!-- #main -->
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php get_sidebar( 'main' ); ?>
-
-			<div class="site-info">
-				<?php do_action( 'twentythirteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentythirteen' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentythirteen' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentythirteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
+	
 	</div><!-- #page -->
-
+	<div class="clear">
+	</div>
+	<div class=" color-4">
+	<footer  class=" row color-4" >
+			<div class="large-12 columns">
+			
+			<div class="large-3 columns">
+			<?php get_sidebar( 'footer1' ); ?>
+			</div>
+			
+			<div class="large-3 columns">
+			<?php get_sidebar( 'footer2' ); ?>
+			</div>
+			
+			
+			<div class="large-3 columns">
+			<?php get_sidebar( 'footer3' ); ?>
+			</div>
+			
+			
+			<div class="large-3 columns">
+			<?php get_sidebar( 'footer4' ); ?>
+			</div>
+			
+			
+			
+			<!-- .site-info -->
+			</div>
+		</footer><!-- #colophon -->
+		
+		<div class="bottom-bar">
+		<div class="row">
+		
+		<div class="large-5 columns"><p>Todos los derechos reservados de AZTEVIA © 2013</p></div>
+		<div class="large-4 columns">
+		<div class="logo-footer"></div>
+		
+		 </div>
+		
+		</div>
+		</div>
+		
+		</div>
 <script src="<?php echo get_template_directory_uri(); ?>/foundation/js/jquery.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/foundation/js/foundation.min.js"></script>
     <script>

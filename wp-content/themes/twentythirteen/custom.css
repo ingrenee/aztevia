@@ -285,7 +285,7 @@ left:inherit;
 
 .color-a,.color-1
 {background-color: #e6007e;}
-.color-font-1
+ .entry-title .color-font-1,.color-font-1
 { color:#e6007e;}
 .testimonio article .entry-header
 {
@@ -389,6 +389,17 @@ h1.title.recetas
 	background-position: 15px center;
 	background-repeat: no-repeat;
 }
+
+.color-4
+{
+	background-color:#802a59;}
+h1.title.blogs
+{
+	background-image: url(aztevia/images/title-blog.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+}
+
 .clear
 {
 	clear:both;}
@@ -477,16 +488,99 @@ padding: 0px;
 float: left;
 }
 
-.blog header
-{}
+
+.blog-aztevia article
+{margin:0px;
+	padding:0px;
+	overflow:hidden;
+	position: relative;
+	margin-bottom:5%;}
+	
+	.blog-aztevia article .post-link
+	{
 
 
-.blog header h1
+	position:absolute;
+	bottom:0px;
+	width: 100%;
+		}
+	
+	.blog-aztevia article .post-link span
+	{
+background-image: url(aztevia/images/corner-horizontal.png);
+background-repeat: no-repeat;
+background-position: left center;
+position: absolute;
+left: -8px;
+top: 62%;
+height: 14px;
+}
+.blog-aztevia header p
+{
+	font-size:12px;
+	padding:0 5%;}
+.blog-aztevia header
+{
+	width: 59%;
+float: right;
+height: 100%;
+position: absolute;
+right: 0px;
+	}
+
+.blog-aztevia  img
+{
+	float:left;
+	width:41%;
+	height:auto;}
+.blog-aztevia header h1
 {
 	line-height: normal;
+	display: inline;
+	clear: both;
+	line-height: normal;
+
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+
 }
-.blog header h1 a
+.blog-aztevia header h1 a
 {
 	font-size: 16px;
 	font-weight: bold;
+	padding:5% 5%;
+	display:-webkit-box;
+	display:flex;
+	
+	
+}
+
+.bottom-bar
+{
+	width: 100%;
+	background-color: #400827;
+}
+
+.bottom-bar p
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	margin: 0px;
+	padding-top: 5%;
+	padding-right: 0px;
+	padding-bottom: 5%;
+	padding-left: 0px;
+}
+.logo-footer
+{
+	background-image: url(aztevia/images/logo-footer.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 61px;
+	width: 147px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
 }
