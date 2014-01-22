@@ -22,7 +22,7 @@ $k=0;
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 
 <?PHP
-$tam=10/$conf[$k];
+$tam=12/$conf[$k];
 	
 if($i==0):
 ?>
@@ -30,7 +30,7 @@ if($i==0):
 <?PHP
 $flag=false;
 	endif;
-	?><div class="bloque-home large-custom-<?PHP echo round($tam)?> pos-<?PHP echo $i;?> columns">
+	?><div class="bloque-home  small-10   medium-6  small-centered large-uncentered  medium-uncentered  large-<?PHP echo (round($tam));?>  t-<?PHP echo $tam;?> pos-<?PHP echo $i;?> columns">
 	<div class="opa2">
 	</div>
 		<?php get_template_part( 'aztevia/templates/content', 'productosaztevia-home' ); ?>
