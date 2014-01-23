@@ -65,6 +65,11 @@
 		}
 	} );
 
+
+
+//$('.rg-thumbs').detach().prependTo('.rg-image-wrapper');	
+
+
 	/**
 	 * Arranges footer widgets vertically.
 	 */

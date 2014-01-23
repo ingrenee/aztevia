@@ -11,15 +11,26 @@
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+	
+	<div class="row">
+	
+	<div class="large-6 columns">
+<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 		<div class="entry-thumbnail">
-			<?php the_post_thumbnail(); ?>
+			
+			<?PHP echo do_shortcode(get_post_meta($post->ID,'wpcf-galeria-de-imagenes',TRUE));?>
+			
+			
 		</div>
 		<?php endif; ?>
+	</div>
+	<div class="large-6 columns">
+	
+	<header class="entry-header">
+	
 
 		<?php if ( is_single() ) : ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title color-font-1"><?php the_title(); ?></h1>
 		<?php else : ?>
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
@@ -42,6 +53,10 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
+	
+	
+	</div>
+	</div>
 
 	<footer class="entry-meta">
 		<?php if ( comments_open() && ! is_single() ) : ?>

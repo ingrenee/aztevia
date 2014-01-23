@@ -613,3 +613,12 @@ right: 0px;
 	padding: 0px;
 	float: right;
 }
+
+
+/* single */
+
+.type-post .entry-title
+{
+	font-size:28px;
+	line-height:normal;
+	font-weight:500;}
