@@ -21,7 +21,12 @@ get_header(); ?>
 
 <div id="main" class="large-12 columns" role="main">
 	<div class="row bg-web listado">
-	<div class="large-12 columns ">
+    
+    <div class="large-3 columns">
+    <?php get_sidebar(); ?>
+    </div>
+    
+	<div class="large-9 columns ">
 
 
 
@@ -43,7 +48,7 @@ get_header(); ?>
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 						
-			<?php get_template_part( 'content', get_post_type( get_the_ID() ) ); ?>
+			<?php get_template_part( 'list', get_post_type( get_the_ID() ) ); ?>
 			<?php endwhile; ?>
 			
 			<?php twentythirteen_paging_nav(); ?>
@@ -54,7 +59,7 @@ get_header(); ?>
 			<!-- #content -->
 <!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 
 </div>
 

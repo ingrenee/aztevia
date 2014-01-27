@@ -7,7 +7,7 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
-<!-- content default  -->
+<!-- content -->
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -28,7 +28,9 @@
 			<?PHP echo do_shortcode($galeria);?>
 			
 			
-		
+			<div class="social-bar">
+			<?php postbar(); ?>
+			</div>
 		</div>
 		<?PHP $css_galeria='con-galeria';?>
 		<?PHP endif;?>
@@ -42,7 +44,24 @@
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
 		<?php endif; // is_single() ?>
-
+<div class="franja-gris <?PHP echo $css_galeria;?>"><div class="precio color-1">
+		
+		<div class="fila"> Precio:</div>
+		
+		<div class="fila precio-valor"><span>S/.</span><?PHP
+		echo get_post_meta($post->ID,'wpcf-precio',TRUE);
+		?>
+		</div>
+		</div>
+		<div class="entry-meta">
+			<?php twentythirteen_entry_meta(); ?>
+			<?php // edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+		</div>
+		
+		
+		
+		
+		</div>
 		<div class="">
 			<?PHP // echo do_shortcode('[rate]');?>
 		</div>
@@ -60,9 +79,7 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 	
-		<div class="social-bar">
-			<?php postbar(); ?>
-			</div>
+	
 	</div>
 	</div>
 

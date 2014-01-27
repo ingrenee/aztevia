@@ -322,7 +322,7 @@ left: 0px;
 .color-a,.color-1
 {background-color: #e6007e;}
  .entry-title .color-font-1,.color-font-1
-{ color:#e6007e;}
+{ color:#e6007e !important;}
 .testimonio article .entry-header
 {
 	color: #FFF;
@@ -340,7 +340,8 @@ left: 0px;
 	line-height: normal;
 	padding: 0px;
 	margin: 0px;
-	font-size: 24px;	
+	font-size: 24px;
+	color: #FFF;
 }
 .testimonio article .entry-header h1 a
 {
@@ -469,7 +470,12 @@ padding: 2% 5%;
 					{
 						padding:0px;
 						margin:0px;
-						margin-bottom:5px;}
+						margin-bottom:5px;	font-size: 16px;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	font-variant: normal;}
 					.receta header .entry-title a
 				{
 	font-size: 16px;
@@ -1001,3 +1007,14 @@ margin-top: 5px;}
 					.listado .entry-header h1 a
 					{
 						color:#333;}
+						
+/* single  single  single  single  single  single  single  single  single  */
+
+.aztevia-single  article header
+{
+	position:relative;
+	color:inherit;}
+	
+	.aztevia-single  article header h1.entry-title 
+	{
+		font-size:38px;}

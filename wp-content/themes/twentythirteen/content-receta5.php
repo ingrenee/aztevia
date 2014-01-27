@@ -7,7 +7,7 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
-
+<!--  content-receta -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <header class="entry-header">
 		<h1 class="entry-title">
