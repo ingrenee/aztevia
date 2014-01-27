@@ -14,19 +14,27 @@
 	
 	<div class="row">
 	
-	<div class="large-6 columns">
-<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-		<div class="entry-thumbnail">
-			
-			<?PHP echo do_shortcode(get_post_meta($post->ID,'wpcf-galeria-de-imagenes',TRUE));?>
-			
-			
-		</div>
-		<?php endif; ?>
-	</div>
-	<div class="large-6 columns">
+
+	<div class="large-12 columns">
 	
 	<header class="entry-header">
+	<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+		
+		<?PHP  $galeria=get_post_meta($post->ID,'wpcf-galeria-de-imagenes',TRUE);?>
+		<?PHP $css_galeria='sin-galeria';?>		
+		<?PHP if(!empty($galeria)):?>
+		<div class="galeria-single entry-thumbnail">
+			
+			<?PHP echo do_shortcode($galeria);?>
+			
+			
+			<div class="social-bar">
+			<?php postbar(); ?>
+			</div>
+		</div>
+		<?PHP $css_galeria='con-galeria';?>
+		<?PHP endif;?>
+		<?php endif; ?>
 	
 
 		<?php if ( is_single() ) : ?>
@@ -36,11 +44,28 @@
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 		</h1>
 		<?php endif; // is_single() ?>
-
+<div class="franja-gris <?PHP echo $css_galeria;?>"><div class="precio color-1">
+		
+		<div class="fila"> Precio:</div>
+		
+		<div class="fila precio-valor"><span>S/.</span><?PHP
+		echo get_post_meta($post->ID,'wpcf-precio',TRUE);
+		?>
+		</div>
+		</div>
 		<div class="entry-meta">
 			<?php twentythirteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-meta -->
+			<?php // edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+		</div>
+		
+		
+		
+		
+		</div>
+		<div class="">
+			<?PHP // echo do_shortcode('[rate]');?>
+		</div>
+		<!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>

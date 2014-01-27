@@ -73,6 +73,12 @@
 	/**
 	 * Arranges footer widgets vertically.
 	 */
+	 
+	 
+	 $('.es-carousel ul li a').click(function(e) {
+		e.preventDefault();
+	});
+	 
 	if ( $.isFunction( $.fn.masonry ) ) {
 		var columnWidth = body.is( '.sidebar' ) ? 228 : 245;
 

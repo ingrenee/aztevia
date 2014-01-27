@@ -41,20 +41,20 @@
 <div class="toptheme">
 <div class="row">
 
-<div class="large-2 columns border-r">
-<span class="central">Llamanos 0800-123-645</span>
+<div class="large-3 columns border-r linea-32 top1">
+<span class="central">Ll&aacute;manos:  0800-123-645</span>
 </div>
 
-<div class="large-2 columns border-r">
+<div class="large-2 columns border-r linea-32 top2">
 <span class="contactanos">Contactanos</span>
 </div>
 
 
-<div class="large-2 columns">
-Enlaces sociales
+<div class="large-2 columns top3 linea-32">
+<?php get_sidebar( 'top3' ); ?>
 </div>
 
-<div class="large-3 columns">
+<div class="large-4 columns">
 <div class="search">
 <?php get_search_form(); ?>
 </div>
@@ -67,7 +67,7 @@ Enlaces sociales
 </div>
 
 <div class="headertheme">
-<div class="row">
+<div class="row header-1">
 <div class="large-4 medium-4 columns">
 		<a   class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<span>Aztevia.com</span>
