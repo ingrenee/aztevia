@@ -55,7 +55,7 @@
 </div>
 
 <div class="large-4 columns">
-<div class="search">
+<div class="aztevia-search">
 <?php get_search_form(); ?>
 </div>
 </div>

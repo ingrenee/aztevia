@@ -832,7 +832,7 @@ margin-bottom:10px;
 	text-transform:capitalize;
 }
 
-.search
+.aztevia-search
 {
 	overflow: hidden;
 	float: left;
@@ -842,7 +842,7 @@ margin-bottom:10px;
 	display: block;
 	padding: 5px;
 }
-.search .search-field
+.aztevia-search .search-field
 {
 	height: 20px;
 	padding: 0px;
