@@ -98,6 +98,8 @@ position: relative;
 .menu-menu-1-container
 {
 	background-color: #e6007e;
+	float: left;
+width: 100%;
 }
 
 .nav-menu li:hover > a, .nav-menu li a:hover
@@ -128,7 +130,8 @@ position: relative;
 	float:left;}
 	ul.nav-menu, div.nav-menu > ul
 	{
-		overflow:hidden;}
+		
+		}
 		
 		.site-footer
 		{
@@ -745,7 +748,7 @@ padding: 5px 10px;color:#fff;}
 			
 			.foot-col
 			{
-				min-height:350px;}
+				min-height:375px;}
 				
 			.foot-col	.widget .widget-title
 				{
@@ -1000,6 +1003,10 @@ margin-top: 5px;}
 				width:70px;
 				}
 				
+				
+				.foot-col .menu-menu-1-container ul li .sub-menu
+				{
+					display:none;}
 				.listado .entry-header
 				{
 					position:relative;}
@@ -1018,3 +1025,60 @@ margin-top: 5px;}
 	.aztevia-single  article header h1.entry-title 
 	{
 		font-size:38px;}
+		
+	
+		.entry-content img.alignleft, .entry-content .wp-caption.alignleft,
+		.entry-content img.alignleft, .entry-content .wp-caption.alignleft,
+		.entry-content img.alignleft, .entry-content .wp-caption.alignleft
+		
+		{
+		
+			margin-left:auto;
+}
+	.entry-content img.alignright, .entry-content .wp-caption.alignright
+{			margin-right:auto;}			
+			.color-0
+			{
+				background-color:#fff;}
+		
+		
+		.trail-browse
+		{
+			display:none;}
+			.breadcrumb-trail
+			{
+	margin: 10px 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color:transparent;
+}
+span.sep
+{
+	display:none;}
+.breadcrumb-trail a:hover
+{
+	color: #9bc31a;
+}
+.breadcrumb-trail a, .trail-end
+{
+	background-color: #FFF;
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 5px;
+	background-image: url(aztevia/images/bread.png);
+	background-position: right center;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	color: #21262a;
+	font-size: 12px;
+}
+.breadcrumbs > *:before
+{
+	content:"";
+	margin:auto;}
+.trail-end
+{
+	background-image: url(aztevia/images/bread-end.png);
+}

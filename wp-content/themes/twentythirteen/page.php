@@ -13,9 +13,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-
+<div  class=" row bg-web">
+	<div class="large-8 columns aztevia-single  "><?PHP breadcrumb_trail();?>
+<div class="layer white">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -42,9 +42,20 @@ get_header(); ?>
 
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
-
+</div>
 		</div><!-- #content -->
+		
+		
+		
+		
+		
+		
+		<div class="large-4 columns">
+			<div class="row">
+            <?php get_sidebar( 'single1' ); ?>
+            </div>
+			</div>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
