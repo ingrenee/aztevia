@@ -22,6 +22,8 @@ get_header(); ?>
 <div id="main" class="large-12 columns" role="main">
 	<div class="row bg-web listado">
     
+    <div class="layer white">
+    
     <div class="large-3 columns">
     <?php get_sidebar(); ?>
     </div>
@@ -58,6 +60,11 @@ get_header(); ?>
 			<?php endif; ?>
 			<!-- #content -->
 <!-- #primary -->
+
+
+
+</div>
+
 
 
 

@@ -52,6 +52,20 @@ get_header(); ?>
 	<?php get_template_part( 'aztevia/blogs', 'home' ); ?>
 	</div></div></div>
     
+    
+    
+    
+    <div class="row bg-web">
+	<div class="large-12 columns">
+    <h1 class="title aliados">Aliados estrat&eacute;gicos</h1>
+    <div class="layer white">
+	<?php get_template_part( 'aztevia/aliados', 'home' ); ?>
+    </div>
+    </div>
+	</div>
+    
+    
+    
 	
 	</div>	
 	
