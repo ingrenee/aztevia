@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.list-item
+{
+	background-color: #ececec;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.list-item  article
+{
+	padding:0px;}
+	
+	.alpha
+	{
+		padding-left:0px;}
+		.omega
+		{
+			padding-right:0px;}
+			
+			
+			.list-item  .texto
+			{
+				font-size:14px;
+				line-height:normal;}
+				
+				.list-item .panel-leer-mas
+				{
+					padding:10px 0px;}
+			.list-item  h1
+			{
+				font-size:18px;
+				margin:10px 0px;
+				}

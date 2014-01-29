@@ -13,6 +13,7 @@ if ( is_active_sidebar( 'sidebar-f1' ) ) : ?>
 	<div id="secondary" class="sidebar-container" role="complementary">
 		<div class="widget-area">
 			<?php dynamic_sidebar( 'sidebar-f1' ); ?>
+			<div class="clear"></div>
 		</div><!-- .widget-area -->
 	</div><!-- #secondary -->
 <?php endif; ?>

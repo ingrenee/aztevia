@@ -9,7 +9,7 @@ $args = array( 'posts_per_page' => 5, 'post_type'=>'aliados-estrategicos');
 
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-	<div class="large-2 medium-4 small-2 columns testimonio"> 
+	<div class="large-2 medium-4 small-2  columns aliado-home"> 
 		<?php get_template_part( 'aztevia/templates/content', 'aliados-home' ); ?>
 	</div>
 <?php endforeach; 

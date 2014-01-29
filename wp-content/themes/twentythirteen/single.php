@@ -8,8 +8,10 @@
  */
 
 get_header(); ?>
-
-	<div  class=" row">
+<div class="large-12  columns">
+	<div  class="row bg-web">
+	<div class="large-12 columns ">
+	<div class=" layer white">
 	<div class="large-8 columns aztevia-single">
 <?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -29,6 +31,8 @@ get_header(); ?>
 			</div>
 		<!-- #content -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+</div>
+</div>
+</div>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

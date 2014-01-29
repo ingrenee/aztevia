@@ -17,7 +17,7 @@
 get_header(); ?>
 
 	<?PHP if(is_home()):?>
-	<div id="main" class="large-12 columns" role="main">
+	<div   class="large-12 columns"  >
 	
 	<?php get_template_part( 'aztevia/productosaztevia', 'home' ); ?>
 	
@@ -55,10 +55,10 @@ get_header(); ?>
     
     
     
-    <div class="row bg-web">
-	<div class="large-12 columns">
+    <div class="row bg-web ">
+	<div class="large-12 columns-aliado columns">
     <h1 class="title aliados">Aliados estrat&eacute;gicos</h1>
-    <div class="layer white">
+    <div class="layer white layer-center">
 	<?php get_template_part( 'aztevia/aliados', 'home' ); ?>
     </div>
     </div>
