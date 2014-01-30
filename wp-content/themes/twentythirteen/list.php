@@ -11,8 +11,8 @@
 <div class="list-item">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<div class="large-4 columns alpha">
-<?php the_post_thumbnail(array(313,163) ); ?>
+<div class="large-4 columns alpha omega">
+<?php the_post_thumbnail('listado-images'); ?>
 </div>
 
 	

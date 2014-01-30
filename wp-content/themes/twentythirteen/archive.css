@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.listado .title-archive,.title-archive
+{
+	font-size: 14px;
+	background-color: #ececec;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 15px;
+	display: block;
+	margin:0px;
+}
+
+.taxonomy-list-content
+{background-color: #ececec;
+	margin:15px;
+	padding:15px;}
+.taxonomy-list-content	  li
+{
+	margin-bottom:10px;}	
+.taxonomy-list-content	  li ,.taxonomy-list-content	  a
+	  {
+		  color:#21262a;
+		  font-size:14px;}
+		  
+		  .taxonomy-list-content	  li.current-cat a
+		  {
+			  text-decoration:underline;}

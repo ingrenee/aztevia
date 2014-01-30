@@ -55,6 +55,11 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'home-testimonio-4', 190, 190, true ); //(cropped)
 		add_image_size( 'home-receta-4', 320, 213, true ); //(cropped)
 		add_image_size( 'home-post-4', 120,180 , true ); //(cropped)
+		
+		add_image_size( 'listado-images', 313,163 , false ); //(cropped)
+
+		
+		
 }
 
 
@@ -83,3 +88,45 @@ function the_content_limit($max_char, $more_link_text = '(more...)', $striptease
       echo "";
    }
 }
+
+
+function aztevia_categorias($id)
+{
+	
+	
+	
+	  $post_type=get_post_type( $id ) ;
+	
+	  $taxonomy= get_object_taxonomies( $post_type);
+
+$args = array(
+	'show_option_all'    => '',
+	'orderby'            => 'name',
+	'order'              => 'ASC',
+	'style'              => 'list',
+	'show_count'         => 1,
+	'hide_empty'         => 0,
+	'use_desc_for_title' => 1,
+	'child_of'           => 0,
+	'feed'               => '',
+	'feed_type'          => '',
+	'feed_image'         => '',
+	'exclude'            => '',
+	'exclude_tree'       => '',
+	'include'            => '',
+	'hierarchical'       => 1,
+	'title_li'           => __( '' ),
+	'show_option_none'   => __('No hay categorias'),
+	'number'             => 5,
+	'echo'               => 1,
+	'depth'              => 10,
+	'current_category'   => 0,
+	'pad_counts'         => 0,
+	'taxonomy'           => $taxonomy[0],
+	'walker'             => null
+); 
+   $this_category = wp_list_categories($args);
+echo '<ul>'. $this_category . '</ul>';
+
+
+	}
