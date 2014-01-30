@@ -35,6 +35,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/custom.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/list.css" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/archive.css" />
+        		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/page.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/custom-query.css" />
 	
 </head>

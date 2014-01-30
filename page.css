@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bloque-aztevia
+{
+	background-color: #ececec;
+	border-left-width: 8px;
+	border-left-style: solid;
+	border-left-color: #9cc31a;
+}
