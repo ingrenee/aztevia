@@ -42,7 +42,7 @@ get_header(); ?>
 </div>
 <?PHP else:?>
 
-<div class="large-12  columns">
+<div class="large-12  columns  custom-post-type">
 	<div  class="row bg-web">
 	<div class="large-12 columns ">
 	<div class=" layer white">

@@ -57,6 +57,7 @@ if ( function_exists( 'add_image_size' ) ) {
 		add_image_size( 'home-post-4', 120,180 , true ); //(cropped)
 		
 		add_image_size( 'listado-images', 313,163 , false ); //(cropped)
+		add_image_size( 'custom-image', 415,366 , false ); //(cropped)		
 
 		
 		

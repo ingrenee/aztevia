@@ -16,38 +16,9 @@
 	
 
 	<div class="large-12 columns">
-	
-	<header class="entry-header">
-	<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-		
-		<?PHP  $galeria=get_post_meta($post->ID,'wpcf-galeria-de-imagenes',TRUE);?>
-		<?PHP $css_galeria='sin-galeria';?>		
-		<?PHP if(!empty($galeria)):?>
-		<div class="galeria-single entry-thumbnail">
-			
-			<?PHP echo do_shortcode($galeria);?>
-			
-			
-		
-		</div>
-		<?PHP $css_galeria='con-galeria';?>
-		<?PHP endif;?>
-		<?php endif; ?>
-	
 
-		<?php if ( is_single() ) : ?>
-		<h1 class="entry-title color-font-1"><?php the_title(); ?></h1>
-		<?php else : ?>
-		<h1 class="entry-title">
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-		</h1>
-		<?php endif; // is_single() ?>
-
-		<div class="">
-			<?PHP // echo do_shortcode('[rate]');?>
-		</div>
-		<!-- .entry-meta -->
-	</header><!-- .entry-header -->
+	  <!-- .entry-meta -->
+	<!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
@@ -55,14 +26,60 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
+    
+    
+    
+    <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+		
+		
+		
+		
+	  <div class="custom-image-content">
+			
+		
+		  <div class="custom-image">			<?php the_post_thumbnail('custom-image'); ?>
+		</div>
+        
+        <div class="social-bar">
+		  <?php postbar(); ?>
+</div>
+        
+	  </div>
+<?PHP endif;?>
+	
+
+	  <?php if ( is_single() ) : ?>
+	  <h1 class="entry-title color-font-1"><?php the_title(); ?></h1>
+	  <?php else : ?>
+	  <h1 class="entry-title">
+		  <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+	  </h1>
+	  <?php endif; // is_single() ?>
+
+	  <div class="">
+		  <?PHP // echo do_shortcode('[rate]');?>
+	  </div>
+
+ <?php if ( !(has_post_thumbnail() && ! post_password_required() )) : ?>
+       <div class="social-bar">
+		  <?php postbar(); ?>
+</div>
+ <?PHP endif;?>    
+    
+    
+    
+    
+    
+    <div class="contenido">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+        
+        </div>
+        
 	</div><!-- .entry-content -->
 	<?php endif; ?>
+	 
 	
-		<div class="social-bar">
-			<?php postbar(); ?>
-			</div>
 	</div>
 	</div>
 

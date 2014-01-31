@@ -16,7 +16,8 @@
 .taxonomy-list-content
 {background-color: #ececec;
 	margin:15px;
-	padding:15px;}
+	padding:15px;
+	margin-right:0px;}
 .taxonomy-list-content	  li
 {
 	margin-bottom:10px;}	

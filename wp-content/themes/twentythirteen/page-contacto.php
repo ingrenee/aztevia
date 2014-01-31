@@ -47,30 +47,19 @@ get_header(); ?>
 			</div>
 </div>
 
-<div class="row">
-<div class="large-11 columns large-centered small-centered small-11">
+            <div class="row">
+                        <div class="large-11 columns large-centered small-centered small-11">
+                        
+                        <?php  get_sidebar( 'page1' ); ?>
+                        
+                        
+                        
+                        </div>
+                        
+                        </div>            
 
-<?php  get_sidebar( 'page1' ); ?>
-
-
-
-</div>
-
-</div>
-
-		</div><!-- #content -->
-		
-		
-		
-		
-		<!-- 
-		
-		<div class="large-4 columns">
-			<div class="row">
-            <?php // get_sidebar( 'single1' ); ?>
-            </div>
-			</div>-->
+		</div>
 	</div> 
-
+</div>
 
 <?php get_footer(); ?>

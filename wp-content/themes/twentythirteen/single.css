@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.custom-post-type
+{}
+
+
+.custom-post-type  .custom-image-content
+{
+	float: right;
+	width: 50%;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+	
+	.custom-post-type article h4
+	{
+		clear:none;}
+	.custom-post-type article h1
+	{
+		clear:none;
+		font-size:35px;}
+		
+		
+		
+		.custom-post-type .entry-content
+		{
+			max-width: 660px;}
+		
+		.custom-post-type .custom-image
+		{
+			margin-bottom:20px;}
+			
+	.custom-post-type  	.social-bar
+		{
+			margin:10px 0px;}
+			
+			.contenido
+			{
+				margin-top:20px;
+				margin-bottom:20px;
+				}
+				
+				
