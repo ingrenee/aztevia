@@ -14,7 +14,7 @@
 get_header(); ?>
 
 <div  class=" row bg-web">
-	<div class="large-12 columns aztevia-single  "><?PHP breadcrumb_trail();?>
+	<div class="large-12 columns aztevia-page  "><?PHP breadcrumb_trail();?>
 <div class="layer white">
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

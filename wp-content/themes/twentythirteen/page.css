@@ -17,6 +17,11 @@ h3.bordes
 	border-left-color: #e6007e;
 	overflow: hidden;
 }
+
+h3.bordes p
+{
+	margin:0px;
+	font-size:20px;}
 .bloque-aztevia
 {
 	background-color: #ececec;
@@ -28,7 +33,7 @@ h3.bordes
 	min-height:313px;
 }
 
-.bloque-aztevia h3
+.bloque-aztevia h3,.bloque-aztevia h4
 {
 	margin-top: 0px;
 	margin-right: 0px;
@@ -37,6 +42,9 @@ h3.bordes
 	font-size: 24px;
 	font-weight: bold;
 }
+.bloque-aztevia h4
+{
+	font-size:16px;}
 .bloque-aztevia p
 {
 	font-size: 16px;
@@ -46,4 +54,62 @@ h3.bordes
 	background-repeat: no-repeat;
 	background-position: left top;
 	color: #21262a;
+}
+.bloque-aztevia.sin-p p
+{
+	background:none;
+	padding:0px;}
+
+.aztevia-page article
+{
+	margin-top:0px;
+	padding-top:0px;}
+	
+	
+	.ufo-customfields-invalid
+	{
+		display:none !important;}
+	.formulario
+	{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #CCC;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	position: relative;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+}
+.corner-top
+{
+	background-image: url(aztevia/images/corner-top.jpg);
+	height: 28px;
+	width: 28px;
+	display: block;
+	background-position: left top;
+	background-repeat: no-repeat;
+	z-index: 999;
+top: -20px;
+position: absolute;
+margin-left: 46px;
+}
+
+.boton-contacto
+{
+	background:none;
+	border:none;
+	background-color:#aec736;-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;}
+	
+	.boton-contacto:hover,
+		.formulario button[disabled]
+	{
+		background:none;
+	background-color: #93A82D;
+		
 }
