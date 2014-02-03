@@ -9,7 +9,7 @@
 ?>
 <!-- content default  -->
 
-
+<span class="system"> content.php </span>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<div class="row">
@@ -82,6 +82,21 @@
 	
 	</div>
 	</div>
+
+
+
+<?PHP
+ $post_type=get_post_type( ) ;
+?>
+
+<?PHP if($post_type=='evento'):?>
+
+<?php get_template_part( 'form', 'evento' ); ?>
+
+<?PHP endif;?>
+
+
+
 
 	<footer class="entry-meta">
 		<?php if ( comments_open() && ! is_single() ) : ?>

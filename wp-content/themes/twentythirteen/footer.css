@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#footer-2 .color-5,#footer-2.color-5
+{
+	background-color:#474747;}
+
+#footer-2 .color-6
+{
+	background-color:#303334;}
+
+
+#footer-2 .foot-col	.widget .widget-title
+{
+	color:#a7bf32;}
+	
+	#footer-2 .textwidget, #footer-2 .foot-col .menu-menu-1-container ul li a
+	{
+		color:#fff;}
+		
+		#footer-2 .bottom-bar
+		{
+			background-color:#1a1c1c;}
+			
+			#footer-2 .logo-footer
+			{
+	background-image: url(aztevia/images/logo-footer-gris.png);
+}

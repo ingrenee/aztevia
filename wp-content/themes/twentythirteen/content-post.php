@@ -9,7 +9,7 @@
 ?>
 <!-- content -->
 
-
+<span class="system"> content-post.php </span>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<div class="row">

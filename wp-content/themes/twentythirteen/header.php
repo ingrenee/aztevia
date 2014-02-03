@@ -36,6 +36,8 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/list.css" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/archive.css" />
         		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/page.css" />
+				        		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/formulario.css" />
+				        		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/footer.css" />								
                         		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/single.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/custom-query.css" />
 	
@@ -43,7 +45,13 @@
 
 <body <?php body_class(); ?>>
 
-<div class="toptheme">
+<div class="sombra-base sombra-2">
+</div>
+
+<div class="gras">
+</div>
+<div class="toptheme ">
+
 <div class="row">
 
 <div class="large-3 columns border-r linea-32 top1">
@@ -56,13 +64,10 @@
 
 
 <div class="large-2 columns top3 linea-32">
-<?php get_sidebar( 'top3' ); ?>
-</div>
+		<a href="http://www.aztevia.yo/contacto/" class="contactanos"><span>Contactanos</span></a> </div>
 
-<div class="large-4 columns">
-<div class="aztevia-search">
-<?php get_search_form(); ?>
-</div>
+<div class="large-3 columns top3 linea-32">
+<span style="float:left;">S&iacute;guenos: &nbsp;&nbsp;</span> <?php get_sidebar( 'top3' ); ?>
 </div>
 
 
@@ -71,8 +76,15 @@
 </div>
 </div>
 
-<div class="headertheme">
-<div class="row header-1">
+<div class="">
+<div id="header-top" class="headertheme row header-1 bg-web">
+
+<div class="hoja izq"></div>
+<div class="hoja der"></div>
+
+<div class="large-12 columns">
+<div class="layer white">
+
 <div class="large-4 medium-4 columns">
 		<a   class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<span>Aztevia.com</span>
@@ -81,12 +93,26 @@
 		
 		<div class="large-4 medium-4 columns">
 				<a href="#" class="link-car">Ver Carrito de compras</a>
+				<div class="aztevia-search">
+<?php get_search_form(); ?>
+</div>
 		</div>
 
 </div>
+</div>
 
-<div class="row">
-		<div class="large-12 columns">
+</div>
+
+<div id="aztevia-menu-top" class="row ">
+<div class="corner-menu der">
+<span></span>
+</div>
+<div class="corner-menu izq">
+<span></span>
+</div>
+
+
+		<div class="large-12 columns alpha omega">
 				
 				
 				

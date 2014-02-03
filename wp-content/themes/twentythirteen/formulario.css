@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title-form
+{
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	font-size:inherit;
+	padding:0px;font-size: 19.29px !important;
+	line-height: normal;
+}
+
+.title-form span
+{
+	
+	padding-right: 10px;
+	color:#fff;
+	padding-left: 10px;
+	padding-top:4px;
+}
+
+
+.formulario .formulario-content
+{
+	width:80%;
+	margin:auto;
+	display:block;}
+
+.formulario .fila
+{
+	display:block;}
+
+.formulario .fila label
+{
+	display:block;}
+	.formulario .fila label input
+	{
+		width:50%;
+		}
+
+.formulario .fila label span
+{
+	display: inline-block;
+float:left;
+min-width:180px;
+text-align:left;}
+
+
+.formulario ul li
+{
+	list-style-type:none;}
+
+.kit
+{
+	display: block;
+	border: 1px dotted #CCC;
+	padding: 10px;
+	}
+.kit h4
+{
+	font: 18px;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	text-align: left;
+}
+	.kit  p
+	{
+	/* [disabled]font-size: 12px; */
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	vertical-align: sub;
+	display: block;
+	font-size:12px;
+}

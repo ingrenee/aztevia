@@ -16,7 +16,7 @@
 	</div><!-- #page -->
 	<div class="clear">
 	</div>
-	<div class=" color-5">
+	<div class=" color-5" id="footer-2">
 	<footer  class=" row color-5" >
 			<div class="large-12 columns">
 			

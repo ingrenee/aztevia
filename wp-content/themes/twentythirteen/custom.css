@@ -5,25 +5,79 @@
 
 body,.site-main,.site
 {
-	background-color: #d8d9d6;
+	background-color: #e0e0e0;
 	border:none;
 }
 body,h1 a, a, p,h1,h2,h3
 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height:normal;
+}
+.color-border-1
+{
+	border-color:#e6007e;
+}
+span.system
+{
+	color: #000;
+	background-color: #FF0;
+	display: inline-block;
+	position:absolute;
+}
+.hoja
+{
+	position: absolute;
+	background-image: url(aztevia/images/hojas.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 155px;
+	width: 102px;
+}
+	
+.hoja.der
+{
+	right: -102px;
+	top: 0px;
+	background-position: right -30px;
 }
 
-{}
-
+.hoja.izq
+{
+	left: -102px;
+	top: 0px;
+	background-position: left -30px;
+}	
+	
 .toptheme
 {
-	background-color: #e6007e;
-	
 	color: #FFF;
 	display: block;
 	width: 100%;
+	background-image: url(aztevia/images/top-bg-bar.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #88c400;
+	position:relative;
+	z-index:999;
+
 	}
-	
+	.sombra-base
+	{
+		position:absolute;
+		width:100%;
+		height:34px;
+		z-index:998;}
+	.gras
+	{
+	background-image: url(aztevia/images/herba.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	width: 100%;
+	position: absolute;
+	height: 55px;
+	z-index:997;
+	display:block;
+}
 	.toptheme span
 	{
 		font-size:12px;}
@@ -36,8 +90,12 @@ body,h1 a, a, p,h1,h2,h3
 	padding-left: 25px;
 	background-repeat: no-repeat;
 }
-
-span.contactanos
+a.contactanos
+{
+	font-size:12px;
+	color:#fff;
+	padding: 7px 26px;}
+.contactanos
 {
 	display: block;
 	background-image: url(aztevia/images/carta.png);
@@ -50,10 +108,46 @@ span.contactanos
 {
 	border-right-width: 1px;
 	border-right-style: solid;
-	border-right-color: #000;
+	border-right-color: #fff;
 }
 
 /*header*/
+
+#aztevia-menu-top
+{
+	position:relative;}
+.corner-menu 
+{
+	position: absolute;
+	height: 48px;
+	width: 20px;
+	
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #86c300;
+}
+.corner-menu span
+{
+	position:absolute;
+	bottom:-15px;background-image: url(aztevia/images/corner-menu.png);
+	width:20px;
+	height:15px;
+	z-index:995;}
+
+.corner-menu.der
+{
+	background-position: right -20px;
+	right: -20px;
+}
+.corner-menu.der span
+{background-position: right 0px;}
+.corner-menu.izq
+{
+	left: -20px;}
+.corner-menu.izq span
+{background-position: left 0px;}
+
+
 
 .logo
 {
@@ -87,11 +181,29 @@ span.contactanos
 {
 	padding-top:10px;
 	padding-bottom:10px;}
+#header-top
+{
+	padding-top:0px;
+	padding-bottom:0px;}
+#header-top .layer
+{
+	margin-top:0px;
+	padding-top:18px;
+	padding-bottom:5px;}
+.sombra-1
+{	-webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 51, 0.44);
+-moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 51, 0.44);
+box-shadow:         0px 5px 8px 0px rgba(50, 50, 51, 0.44);}
+
+.sombra-2
+{/*
+-webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 51, 0.44);
+-moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 51, 0.44);*/
+box-shadow:         0px 15px 20px 0px rgba(50, 50, 51, 0.14);}
+
 .headertheme
 {
-	-webkit-box-shadow: 0px 5px 8px 0px rgba(50, 50, 51, 0.44);
--moz-box-shadow:    0px 5px 8px 0px rgba(50, 50, 51, 0.44);
-box-shadow:         0px 5px 8px 0px rgba(50, 50, 51, 0.44);
+
 
 z-index: 99;
 position: relative;
@@ -103,19 +215,27 @@ background-color:#fff;
 	display:none;}
 .menu-menu-1-container
 {
-	background-color: #e6007e;
+	background-color: #86c300;
 	float: left;
 width: 100%;
 }
 
 .nav-menu li:hover > a, .nav-menu li a:hover
 {
-	background-color: #400827;
+	background-color: #007635;
 }
 
-.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_item:hover > a 
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current_page_ancestor:hover > a 
+.nav-menu .current-menu-item > a, 
+.nav-menu .current-menu-item:hover > a, 
+.nav-menu .current-menu-ancestor > a,
+.nav-menu .current-menu-ancestor:hover > a,
+.nav-menu .menu-item-type-post_type_archive.current-menu-item  a
 {
-	background-color: #9bc31a;
+	background-color: #ff0081;
 	color: #FFF;
 	font-style: normal;
 	line-height: normal;
@@ -231,7 +351,7 @@ left: 3%;}
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: #9bc31a;
+	background-color: #deb117;
 	z-index:100;
 	opacity:0.8;
 }
@@ -281,13 +401,25 @@ left:inherit;
 	border-bottom-color: #000;
 	padding-bottom: 8px;
 }
+.nav-menu .sub-menu, .nav-menu .children
+{
+	background-color:#00753c;}
+ul.nav-menu ul a:hover, .nav-menu ul ul a:hover
+{
+	text-decoration:underline;
+	background-color:transparent;}
+ul.nav-menu li:hover > ul, .nav-menu ul li:hover > ul
+{-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;}
 
 .efecto, .nav-menu li:hover > a, .nav-menu li a:hover
 {
-	-webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;}
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;}
 
 .bloque-home:hover .entry-header h1 a span.corner
 {
@@ -866,10 +998,12 @@ margin-bottom:10px;
 	overflow: hidden;
 	float: left;
 	width: 100%;
-	background-color: #67003e;
+	background-color: #e0e0e0;
 	text-align: center;
 	display: block;
 	padding: 5px;
+	margin-top: 15px;
+	line-height: 20px;
 }
 .aztevia-search .search-field
 {
@@ -878,7 +1012,7 @@ margin-bottom:10px;
 	margin: 0px;
 	width: auto;
 	float: left;
-	min-width: 150px;
+	min-width: 230px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
@@ -894,10 +1028,15 @@ margin-bottom:10px;
 	.search-form 
 	{
 		overflow:hidden;}
-	.search-form .search-submit:hover
+	.search-form .search-submit:hover,
+	.search-form input[type="submit"]:active
 	{
 		background:none;
-		background-color:#e6007e !important;}
+		background-color:#e6007e !important;
+		padding-top: 0px;
+padding-right: 5px;
+padding-bottom: 0px;
+padding-left: 5px;}
 	.search-form .search-submit
 	{
 	display: inline-block;
