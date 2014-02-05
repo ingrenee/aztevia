@@ -23,6 +23,7 @@ span.system
 	background-color: #FF0;
 	display: inline-block;
 	position:absolute;
+	opacity:0.3;
 }
 .hoja
 {
@@ -233,11 +234,17 @@ width: 100%;
 .nav-menu .current-menu-item:hover > a, 
 .nav-menu .current-menu-ancestor > a,
 .nav-menu .current-menu-ancestor:hover > a,
-.nav-menu .menu-item-type-post_type_archive.current-menu-item  a
+.nav-menu .menu-item-type-post_type_archive.current-menu-item  a,
+
+.nav-menu .menu-item-type-post_type.current_page_item > a, 
+.nav-menu .menu-item-type-post_type.current_page_ancestor > a, 
+.nav-menu .menu-item-type-post_type.current-menu-item > a, 
+.nav-menu .menu-item-type-post_type.current-menu-ancestor > a
+
 {
 	background-color: #ff0081;
 	color: #FFF;
-	font-style: normal;
+	font-style: normal !important;
 	line-height: normal;
 }
 .nav-menu li a

@@ -1,8 +1,13 @@
+<?PHP
+$options = get_option( 'wedevs_basics' );
+?>
+
 <?php if ( have_posts() ) : ?>
 <?PHP
-$conf[0]=3;
-$conf[1]=2;
-$conf[2]=0;
+$conf[0]=($options['productos_aztevia_fila_1'])?$options['productos_aztevia_fila_1']:3;
+$conf[1]=($options['productos_aztevia_fila_2'])?$options['productos_aztevia_fila_2']:3;
+$conf[2]=($options['productos_aztevia_fila_3'])?$options['productos_aztevia_fila_3']:3;
+$conf[3]=($options['productos_aztevia_fila_4'])?$options['productos_aztevia_fila_4']:3;
 
 
 
@@ -13,9 +18,9 @@ $conf[2]=0;
 <?php
 
 
-$args = array( 'posts_per_page' => 6, 'post_type'=>'post');
+//$args = array( 'posts_per_page' => 1, 'post_type'=>'post');
 
-$myposts = get_posts( 'category_name=productos-aztevia&numberposts=20' );
+$myposts = get_posts( 'category_name=productos-aztevia&numberposts='.$options['productos_aztevia_num'] );
 $i=0;
 $k=0;
 

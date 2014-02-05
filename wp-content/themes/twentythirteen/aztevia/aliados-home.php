@@ -5,7 +5,7 @@
 <?php
 
 
-$args = array( 'posts_per_page' => 5, 'post_type'=>'aliados-estrategicos');
+$args = array( 'posts_per_page' => 5, 'post_type'=>'aliado-estrategico');
 
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>

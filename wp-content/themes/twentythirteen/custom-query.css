@@ -19,6 +19,14 @@
 	{
 		width:50%;
 		float:left;}
+		
+		.bloque-home:last-child
+		{
+			float:none;}
+
+.bloque-home[class*="column"] + .bloque-home[class*="column"]:last-child
+{
+			float:none;}
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 

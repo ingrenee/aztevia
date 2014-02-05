@@ -13,12 +13,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+
+<div  class="row bg-web search-template">
+		<div class="large-12 columns ">
+				<div class=" layer white">
 
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Tag Archives: %s', 'twentythirteen' ), single_tag_title( '', false ) ); ?></h1>
+			<header class="page-header">
+				<h1 class="archive-title"><?php printf( __( 'Tag : %s', 'twentythirteen' ), single_tag_title( '', false ) ); ?></h1>
 
 				<?php if ( tag_description() ) : // Show an optional tag description ?>
 				<div class="archive-meta"><?php echo tag_description(); ?></div>
@@ -36,6 +38,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
+		</div><!-- #content -->
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
