@@ -15,7 +15,9 @@
  */
 
 get_header(); ?>
-
+<?PHP
+$options = get_option( 'wedevs_basics' );
+?>
 	<?PHP if(is_home()):?>
 	<div   class="large-12 columns"  >
 	
@@ -24,6 +26,11 @@ get_header(); ?>
 	
 	<?php // get_template_part( 'aztevia/productos', 'home' ); ?>
 	
+	
+	
+	<?PHP
+	if( $options['radio_testimonios']!='no'):
+	?>
 	<div class="row bg-web">
 	<div class="large-12 columns ">
 	
@@ -33,8 +40,13 @@ get_header(); ?>
 	
 	<?php get_template_part( 'aztevia/testimonios', 'home' ); ?>
 	</div></div></div>
-	
+	<?PHP endif;?>
     
+	
+	
+	<?PHP
+	if( $options['radio_recetas']!='no'):
+	?>
     <div class="row bg-web">
 	<div class="large-12 columns">
     <h1 class="title recetas">Recetas</h1>
@@ -43,8 +55,13 @@ get_header(); ?>
     </div>
     </div>
 	</div>
+    <?PHP endif;?>
     
-    
+	
+	<?PHP
+	if( $options['radio_blog']!='no'):
+	?>
+	
     <div class="row bg-web">
 	<div class="large-12 columns">
     <h1 class="title blogs">Blog</h1>
@@ -52,9 +69,11 @@ get_header(); ?>
 	<?php get_template_part( 'aztevia/blogs', 'home' ); ?>
 	</div></div></div>
     
+    <?PHP endif;?>
     
-    
-    
+    <?PHP
+	if( $options['radio_aliados']!='no'):
+	?>
     <div class="row bg-web ">
 	<div class="large-12 columns-aliado columns">
     <h1 class="title aliados">Aliados estrat&eacute;gicos</h1>
@@ -64,7 +83,7 @@ get_header(); ?>
     </div>
 	</div>
     
-    
+    <?PHP endif;?>
     
 	
 	</div>	
