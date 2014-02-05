@@ -74,3 +74,23 @@ text-align:left;}
 	display: block;
 	font-size:12px;
 }
+
+.mensaje-confirmacion-evento
+{
+	display: block;
+	text-align: center;
+	color: #FFF;
+	padding: 10px;
+}
+
+.mensaje-confirmacion-evento h1
+{
+	display: block;
+	padding: 0px;
+	text-align: center;
+	color: #FFF;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}

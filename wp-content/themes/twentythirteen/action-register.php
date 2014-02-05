@@ -99,7 +99,7 @@ $registros= get_posts($arg);
 			 
 			 
 			);  
-			   //$id=wp_insert_post( $post);
+			   $id=wp_insert_post( $post);
 			
 							if(($id)>0):
 							

@@ -2,7 +2,21 @@
 <span class="system">form-evento</span>
 <br>
 
+<?PHP
+$r=$_GET['r'];
+if($r=='complete'):
+?>
+<div class="mensaje-confirmacion-evento color-1">
+<h1>Tu inscripción se ha realizado con éxito</h1>
+<!-- 
+<p>Muy pronto recibirás un email de  confirmación. Sigue las indicaciones.</p>
+-->
 
+<p>Muy pronto nos pondremos en contacto contigo.</p>
+</div>
+<?PHP
+endif;
+?>
 
 
 
