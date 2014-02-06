@@ -21,6 +21,7 @@ get_header(); ?>
 <?PHP
  $post_type=get_post_type( $id ) ;
 ?>
+<span class="system">archive.php</span>
 <div id="main" class="large-12 columns" role="main">
 	<div class="row bg-web listado <?PHP echo $post_type;?>-listado">
     

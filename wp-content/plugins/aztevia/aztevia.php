@@ -314,3 +314,10 @@ echo '<ul>'. $this_category . '</ul>';
 
 if( is_admin() )
     $my_settings_page = new AzteviaConfig();
+/*##############################################################333*/
+
+function mytheme_dequeue_fonts() {
+         wp_dequeue_style( 'twentythirteen-fonts' );
+      }
+
+add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );

@@ -92,7 +92,7 @@ function twentythirteen_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'twentythirteen' ) );
 
-	/*
+	/*twentythirteen
 	 * This theme uses a custom image size for featured images, displayed on
 	 * "standard" posts and pages.
 	 */
@@ -145,7 +145,7 @@ function twentythirteen_fonts_url() {
 		$fonts_url = add_query_arg( $query_args, "//fonts.googleapis.com/css" );
 	}
 
-	return $fonts_url;
+	return 0;// $fonts_url;
 }
 
 /**
