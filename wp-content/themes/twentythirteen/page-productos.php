@@ -1,8 +1,10 @@
 <?php
 /**
- * The template for displaying Category pages.
+ * The template for displaying all pages.
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that other
+ * 'pages' on your WordPress site will use a different template.
  *
  * @package WordPress
  * @subpackage Twenty_Thirteen
@@ -11,8 +13,10 @@
 
 get_header(); ?>
 
-	<span class="system"> category.php </span>
-	
+<?PHP
+ $post_type=get_post_type( $id ) ;
+?>
+
 <div id="main" class="large-12 columns" role="main">
 		<div class="row bg-web listado <?PHP echo $post_type;?>-listado">
 				<div class="large-12 columns">
@@ -65,7 +69,4 @@ get_header(); ?>
 				</div>
 		</div>
 </div>
-	
-	
-	
 <?php get_footer(); ?>

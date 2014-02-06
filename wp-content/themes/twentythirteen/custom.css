@@ -1011,6 +1011,10 @@ margin-bottom:10px;
 	padding: 5px;
 	margin-top: 15px;
 	line-height: 20px;
+	
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
 }
 .aztevia-search .search-field
 {
@@ -1313,4 +1317,62 @@ top: 16%;
 height: 14px;
 float: left;
 width: 8px;
+}
+
+.aztevia-market
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #007435;
+	background-image: url(aztevia/images/bg-buttom.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 18px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top:5px;
+	vertical-align: middle;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	padding-bottom: 2px;
+	line-height: 30px;
+	float: right;
+	border: 1px solid #00642D;
+}
+.aztevia-market:hover
+{background-color: #007435;
+background-image:none;
+text-decoration:none;
+color:#fff;
+}
+.aztevia-market:hover span.car
+{
+	
+	opacity:0.7;	
+	}
+.aztevia-market span.car
+{
+	background-image: url(aztevia/images/car.png);
+	background-position: 4px 7px;
+	height: 24px;
+	width: 24px;
+	background-color: #0c7435;
+	background-repeat: no-repeat;
+	display: inline-block;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	float: right;
+	margin-left: 7px;
+-webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:    0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+box-shadow:         0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+	vertical-align: middle;
+	margin-top: 3px;
 }

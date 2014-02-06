@@ -98,11 +98,15 @@ function aztevia_categorias($id)
 {
 	
 	
-	
+	if($id):
 	  $post_type=get_post_type( $id ) ;
 	
 	  $taxonomy= get_object_taxonomies( $post_type);
-
+	  else:
+	  $post_type="post";
+	  $taxonomy[0]='category';
+	  
+endif;
 $args = array(
 	'show_option_all'    => '',
 	'orderby'            => 'name',

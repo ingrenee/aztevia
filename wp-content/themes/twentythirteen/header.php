@@ -65,7 +65,7 @@
 
 
 <div class="large-2 columns top3 linea-32">
-		<a href="http://www.aztevia.yo/contacto/" class="contactanos"><span>Contactanos</span></a> </div>
+		<a href="http://www.aztevia.yo/contacto/" class="contactanos"><span>Cont&aacute;ctanos</span></a> </div>
 
 <div class="large-3 columns top3 linea-32">
 <span style="float:left;">S&iacute;guenos: &nbsp;&nbsp;</span> <?php get_sidebar( 'top3' ); ?>
@@ -93,7 +93,7 @@
 </div>
 		
 		<div class="large-4 medium-4 columns">
-				<a href="#" class="link-car">Ver Carrito de compras</a>
+				<a href="#" class="aztevia-market"><span><span class="car">&nbsp;</span>Aztevia Market </span></a>
 				<div class="aztevia-search">
 <?php get_search_form(); ?>
 </div>
