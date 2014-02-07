@@ -35,11 +35,17 @@
     </div>
     
     <div class="">
-      <a href="<?php echo esc_url( twentythirteen_get_link_url() ); ?>" class="mas-informacion font-12   color-2">Leer m&aacute;s</a>
+      <a href="<?php echo esc_url( twentythirteen_get_link_url() ); ?>" class="mas-informacion    color-font-1">M&aacute;s informaci&oacute;n ...</a>
       </div>
+    
+    <div class="">
+    <a href="#" class="agregar-carrito"><span>Agregar al carrito</span></a>
+    </div>
     
   </div><!-- .entry-content -->
   
   <!-- .entry-meta -->
+  <div class="clear">
+  </div>
 </article><!-- #post -->
 
