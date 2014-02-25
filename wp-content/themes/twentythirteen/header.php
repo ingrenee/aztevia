@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 /**
  * The Header for our theme.
  *
@@ -55,8 +55,10 @@
 
 <div class="row">
 
-<div class="large-3 columns border-r linea-32 top1">
-<span class="central">Ll&aacute;manos:  0800-123-645</span>
+<div class="large-4 columns  linea-32 top1">
+<span class="central    ">Ll&aacute;manos:  0800-123-645   </span> &nbsp;  /&nbsp;  
+ 
+<a href="http://www.aztevia.com/web/contacto/" class="contactanos line-vertical"><span>Cont&aacute;ctanos</span></a>
 </div>
 
 <div class="large-2 columns border-r linea-32 top2">
@@ -64,11 +66,13 @@
 </div>
 
 
-<div class="large-2 columns top3 linea-32">
-		<a href="http://www.aztevia.yo/contacto/" class="contactanos"><span>Cont&aacute;ctanos</span></a> </div>
+<div class="large-4 columns top3   linea-32">
 
-<div class="large-3 columns top3 linea-32">
-<span style="float:left;">S&iacute;guenos: &nbsp;&nbsp;</span> <?php get_sidebar( 'top3' ); ?>
+<?php wp_nav_menu( array( 'theme_location' => 'top-home', 'menu_class' => 'nav-menu-top-home' ) ); ?>
+		 </div>
+
+<div class="large-2 columns top3 linea-32">
+<span style="float:left;"></span> <?php get_sidebar( 'top3' ); ?>
 </div>
 
 

@@ -91,6 +91,7 @@ function twentythirteen_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'twentythirteen' ) );
+	register_nav_menu( 'top-home', __( 'Navigation top home', 'twentythirteen' ) );
 
 	/*twentythirteen
 	 * This theme uses a custom image size for featured images, displayed on
@@ -668,3 +669,36 @@ function custom_page_menu($menu, $args) {
 add_filter( 'wp_page_menu', 'custom_page_menu' ,10,2 );
 
 /* Agregado por renee*/
+function enviar_email_evento($email='renee.morales@glr.pe')
+{
+		
+	$p= get_post(303); 
+	
+	 $m=$p->post_content;
+	 $t=$p->post_title;
+	include_once(get_template_directory().'/phpmailer/class.phpmailer.php' );
+
+$mail = new PHPMailer();
+
+//$mail->IsSMTP();
+
+$mail->SetFrom("ing.renee.sis@gmail.com", "Renee MOrales");
+
+//$mail->AddReplyTo("jamie@beautifulcoding.com", "Jamie Loberman");
+$mail->CharSet = "UTF-8";
+$mail->AddAddress($email);
+
+$mail->Subject = $t;
+
+$mail->MsgHTML($m);
+
+if ($mail->Send()) {
+   // echo "Sent";
+} else {
+    //echo "Error";
+}
+	
+
+	
+	
+	}

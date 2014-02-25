@@ -1,12 +1,10 @@
-<?PHP
+<?PHP session_start();
 define('WP_USE_THEMES', false);
 global $wp, $wp_query, $wp_the_query, $wp_rewrite, $wp_did_header;
 require('../../../wp-load.php');
 require_once('../../../wp-includes/pluggable.php');
 
-?>
 
-<?PHP
 if(!empty($_POST['evento-id'])):
 /* s eintenta guardar un registro*/
  $nonce=$_POST['_wpnonce'];
@@ -65,7 +63,7 @@ else:
    $evento_nombre=$_POST['evento-nombre'];               
          
 		 /* verificar si existe */
-		  echo $email;
+		//  echo $email;
 $arg= array(
 'post_type' => 'registro',
 'numberposts' => -1,
@@ -103,6 +101,7 @@ $registros= get_posts($arg);
 			
 							if(($id)>0):
 							
+							$_SESSION['email']=$email;
 							
 							add_post_meta( $id, 'wpcf-registro-nombre-kit', $kit_nombre );
 							add_post_meta( $id, 'wpcf-registro-nombre-evento', $evento_nombre );

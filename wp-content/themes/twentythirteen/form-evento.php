@@ -1,10 +1,17 @@
+<?PHP 
 
+?>
 <span class="system">form-evento</span>
 <br>
 
-<?PHP
+<?PHP  //enviar_email_evento();
 $r=$_GET['r'];
 if($r=='complete'):
+$e=$_SESSION['email'];
+
+//var_dump($e);
+enviar_email_evento($e);
+
 ?>
 <div class="mensaje-confirmacion-evento color-1">
 <h1>Tu inscripción se ha realizado con éxito</h1>
@@ -153,7 +160,11 @@ foreach ($child_posts as $child_post) {
 </div>
 </div>
 <br><br>
+<div class="large-8 large-centered columns">
+<p class="alerta-roja"><b>Al inscribirte aceptas que: </b>Aztevia No se hace responsable de lesiones y/o accidentes  que puedan ocurrir durante el evento.
+</p></div><br>
 <div class="large-7 large-centered columns">
+
 <button class="boton-contacto large-12 large-centered columns" type="submit">Inscríbete</button>
 </div>
 </div>
