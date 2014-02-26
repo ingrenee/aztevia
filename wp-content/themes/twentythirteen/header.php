@@ -58,7 +58,7 @@
 <div class="large-4 columns  linea-32 top1">
 <span class="central    ">Ll&aacute;manos:  0800-123-645   </span> &nbsp;  /&nbsp;  
  
-<a href="http://www.aztevia.com/web/contacto/" class="contactanos line-vertical"><span>Cont&aacute;ctanos</span></a>
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>web/contacto/" class="contactanos line-vertical"><span>Cont&aacute;ctanos</span></a>
 </div>
 
 <div class="large-2 columns border-r linea-32 top2">
