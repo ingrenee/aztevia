@@ -11,7 +11,15 @@
 <?php the_post_thumbnail('home-productos-3'); ?>
 		
 		<header class="entry-header">
-		<img src="<?PHP echo get_post_meta($post->ID,'wpcf-imagen-de-producto',TRUE)?>">
+		<img src="<?PHP 
+		
+		
+		$img=get_post_meta($post->ID,'wpcf-imagen-de-producto',TRUE);
+		
+		$im=explode('wp-content',$img);
+		echo get_home_url().'/wp-content/'.$im[1];
+		
+		?>">
 		
 		
 		<div class="opa1">
